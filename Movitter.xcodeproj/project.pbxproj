@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E2AA80061C2FF265008706F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA80051C2FF265008706F8 /* AppDelegate.swift */; };
-		E2AA80081C2FF265008706F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA80071C2FF265008706F8 /* ViewController.swift */; };
+		E2AA80081C2FF265008706F8 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA80071C2FF265008706F8 /* TimelineViewController.swift */; };
 		E2AA800B1C2FF265008706F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2AA80091C2FF265008706F8 /* Main.storyboard */; };
 		E2AA800D1C2FF265008706F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2AA800C1C2FF265008706F8 /* Assets.xcassets */; };
 		E2AA80101C2FF265008706F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2AA800E1C2FF265008706F8 /* LaunchScreen.storyboard */; };
 		E2AA801B1C2FF265008706F8 /* MovitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA801A1C2FF265008706F8 /* MovitterTests.swift */; };
 		E2AA80261C2FF265008706F8 /* MovitterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA80251C2FF265008706F8 /* MovitterUITests.swift */; };
+		E2AA80351C2FF4D6008706F8 /* TimelineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2AA80341C2FF4D6008706F8 /* TimelineView.xib */; };
+		E2AA80371C2FF4E2008706F8 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA80361C2FF4E2008706F8 /* Timeline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		E2AA80021C2FF265008706F8 /* Movitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AA80051C2FF265008706F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2AA80071C2FF265008706F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2AA80071C2FF265008706F8 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		E2AA800A1C2FF265008706F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2AA800C1C2FF265008706F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2AA800F1C2FF265008706F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		E2AA80211C2FF265008706F8 /* MovitterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovitterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AA80251C2FF265008706F8 /* MovitterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovitterUITests.swift; sourceTree = "<group>"; };
 		E2AA80271C2FF265008706F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2AA80341C2FF4D6008706F8 /* TimelineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineView.xib; sourceTree = "<group>"; };
+		E2AA80361C2FF4E2008706F8 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,8 @@
 		E2AA80041C2FF265008706F8 /* Movitter */ = {
 			isa = PBXGroup;
 			children = (
+				E2AA80331C2FF4C4008706F8 /* Timeline */,
 				E2AA80051C2FF265008706F8 /* AppDelegate.swift */,
-				E2AA80071C2FF265008706F8 /* ViewController.swift */,
 				E2AA80091C2FF265008706F8 /* Main.storyboard */,
 				E2AA800C1C2FF265008706F8 /* Assets.xcassets */,
 				E2AA800E1C2FF265008706F8 /* LaunchScreen.storyboard */,
@@ -123,6 +127,16 @@
 				E2AA80271C2FF265008706F8 /* Info.plist */,
 			);
 			path = MovitterUITests;
+			sourceTree = "<group>";
+		};
+		E2AA80331C2FF4C4008706F8 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				E2AA80071C2FF265008706F8 /* TimelineViewController.swift */,
+				E2AA80341C2FF4D6008706F8 /* TimelineView.xib */,
+				E2AA80361C2FF4E2008706F8 /* Timeline.swift */,
+			);
+			name = Timeline;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +249,7 @@
 				E2AA80101C2FF265008706F8 /* LaunchScreen.storyboard in Resources */,
 				E2AA800D1C2FF265008706F8 /* Assets.xcassets in Resources */,
 				E2AA800B1C2FF265008706F8 /* Main.storyboard in Resources */,
+				E2AA80351C2FF4D6008706F8 /* TimelineView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +274,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2AA80081C2FF265008706F8 /* ViewController.swift in Sources */,
+				E2AA80371C2FF4E2008706F8 /* Timeline.swift in Sources */,
+				E2AA80081C2FF265008706F8 /* TimelineViewController.swift in Sources */,
 				E2AA80061C2FF265008706F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
