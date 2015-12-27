@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Timeline: UIView {
+class TimelineView: UIView {
 
     /*
     // Only override drawRect: if you perform custom drawing.

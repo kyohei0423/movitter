@@ -9,10 +9,21 @@
 import UIKit
 
 class TimelineViewController: UIViewController {
+    
+    override func loadView() {
+        super.loadView()
+        let nib = UINib(nibName: "TimelineView", bundle: nil)
+        view = nib.instantiateWithOwner(nil, options: nil).first as! TimelineView
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "newPost", style: .Plain, target: self, action: "newPost")
     }
 
     override func didReceiveMemoryWarning() {
