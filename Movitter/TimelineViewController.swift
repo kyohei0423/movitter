@@ -23,14 +23,19 @@ class TimelineViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "newPost", style: .Plain, target: self, action: "newPost")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "newPost", style: .Plain, target: self, action: "tapNewPostButton")
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func tapNewPostButton() {
+        performSegueWithIdentifier("ModalChoosePhotoViewController", sender: nil)
+    }
+    
 
 }
 
