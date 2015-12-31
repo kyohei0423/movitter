@@ -22,6 +22,10 @@
 		E2EE98C71C30146400F8D520 /* MovieView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EE98C61C30146400F8D520 /* MovieView.xib */; };
 		E2EE98C91C30147A00F8D520 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE98C81C30147A00F8D520 /* MovieViewController.swift */; };
 		E2EE98CB1C30148C00F8D520 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE98CA1C30148C00F8D520 /* MovieView.swift */; };
+		E2EE98D41C30BA5900F8D520 /* ShutterButton1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2EE98D21C30BA5900F8D520 /* ShutterButton1@2x.png */; };
+		E2EE98D91C30BDB100F8D520 /* outer2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2EE98D71C30BDB100F8D520 /* outer2@2x.png */; };
+		E2EE991F1C32E8F000F8D520 /* CusttomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE991E1C32E8F000F8D520 /* CusttomNavigationBar.swift */; };
+		E2EE99221C33A9E200F8D520 /* ShutterButtonStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2EE99211C33A9E200F8D520 /* ShutterButtonStop@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		E2EE98C61C30146400F8D520 /* MovieView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieView.xib; sourceTree = "<group>"; };
 		E2EE98C81C30147A00F8D520 /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		E2EE98CA1C30148C00F8D520 /* MovieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
+		E2EE98D21C30BA5900F8D520 /* ShutterButton1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ShutterButton1@2x.png"; path = "ShutterButtonStart.imageset/ShutterButton1@2x.png"; sourceTree = "<group>"; };
+		E2EE98D71C30BDB100F8D520 /* outer2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "outer2@2x.png"; path = "../outer2.imageset/outer2@2x.png"; sourceTree = "<group>"; };
+		E2EE991E1C32E8F000F8D520 /* CusttomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CusttomNavigationBar.swift; sourceTree = "<group>"; };
+		E2EE99211C33A9E200F8D520 /* ShutterButtonStop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShutterButtonStop@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +125,7 @@
 				E2AA80331C2FF4C4008706F8 /* Timeline */,
 				E2AA80381C2FF802008706F8 /* ChoosePhoto */,
 				E2EE98C51C30143200F8D520 /* Movie */,
+				E2EE99201C33A7A000F8D520 /* Images */,
 				E2AA80051C2FF265008706F8 /* AppDelegate.swift */,
 				E2AA800C1C2FF265008706F8 /* Assets.xcassets */,
 				E2AA800E1C2FF265008706F8 /* LaunchScreen.storyboard */,
@@ -166,11 +175,22 @@
 		E2EE98C51C30143200F8D520 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
-				E2EE98C61C30146400F8D520 /* MovieView.xib */,
 				E2EE98C81C30147A00F8D520 /* MovieViewController.swift */,
 				E2EE98CA1C30148C00F8D520 /* MovieView.swift */,
+				E2EE98C61C30146400F8D520 /* MovieView.xib */,
+				E2EE991E1C32E8F000F8D520 /* CusttomNavigationBar.swift */,
 			);
 			name = Movie;
+			sourceTree = "<group>";
+		};
+		E2EE99201C33A7A000F8D520 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E2EE99211C33A9E200F8D520 /* ShutterButtonStop@2x.png */,
+				E2EE98D21C30BA5900F8D520 /* ShutterButton1@2x.png */,
+				E2EE98D71C30BDB100F8D520 /* outer2@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,10 +301,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2AA80101C2FF265008706F8 /* LaunchScreen.storyboard in Resources */,
+				E2EE98D91C30BDB100F8D520 /* outer2@2x.png in Resources */,
 				E2AA800D1C2FF265008706F8 /* Assets.xcassets in Resources */,
+				E2EE99221C33A9E200F8D520 /* ShutterButtonStop@2x.png in Resources */,
 				E2AA800B1C2FF265008706F8 /* Main.storyboard in Resources */,
 				E2EE98C71C30146400F8D520 /* MovieView.xib in Resources */,
 				E2AA803E1C300A2D008706F8 /* ChoosePhotoView.xib in Resources */,
+				E2EE98D41C30BA5900F8D520 /* ShutterButton1@2x.png in Resources */,
 				E2AA80351C2FF4D6008706F8 /* TimelineView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2AA80371C2FF4E2008706F8 /* TimelineView.swift in Sources */,
+				E2EE991F1C32E8F000F8D520 /* CusttomNavigationBar.swift in Sources */,
 				E2AA80081C2FF265008706F8 /* TimelineViewController.swift in Sources */,
 				E2EE98CB1C30148C00F8D520 /* MovieView.swift in Sources */,
 				E2AA80061C2FF265008706F8 /* AppDelegate.swift in Sources */,
