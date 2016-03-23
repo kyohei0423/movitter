@@ -7,7 +7,8 @@
 //
 
 import UIKit
+import Photos
 
 class Movie: NSObject {
-
+    var movie: PHAsset?
 }

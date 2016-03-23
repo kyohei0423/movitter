@@ -90,20 +90,15 @@ class MovieViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
             //録画を停止する
             fileOutput.stopRecording()
             
-            //保存する
-            
-            
             //録画中でなくする
             isRecording = false
             
             //ボタンの状態を変更する
             movieView.recordButton.setImage(UIImage(named: "ShutterButton1"), forState: .Normal)
-            
-            
-            
         }
     }
     
+    //撮影が停止した時に呼ぶ
     func captureOutput(captureOutput: AVCaptureFileOutput!, didFinishRecordingToOutputFileAtURL outputFileURL: NSURL!, fromConnections connections: [AnyObject]!, error: NSError!) {
         
         PHPhotoLibrary.sharedPhotoLibrary().performChanges({ () -> Void in
