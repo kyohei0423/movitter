@@ -21,13 +21,8 @@ class ChooseMovieView: UIView {
         let nib = UINib(nibName: "MovieCollectionViewCell", bundle: nil)
         
         movieCollectionView.registerNib(nib, forCellWithReuseIdentifier: "MovieCollectionViewCell")
-        movieCollectionView.frame.origin = CGPoint(x: 0, y: self.frame.height)
-        movieCollectionView.frame.size = CGSize(width: self.frame.width, height: self.frame.height - self.frame.width)
-        print(movieCollectionView.frame)
         setCollectionViewFlowLayout()
     }
-    
-    
     
     private func setCollectionViewFlowLayout() {
         let flowLayout = UICollectionViewFlowLayout()

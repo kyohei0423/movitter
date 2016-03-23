@@ -30,6 +30,8 @@ class MovieManager: NSObject, UICollectionViewDataSource {
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("MovieCollectionViewCell", forIndexPath: indexPath) as! MovieCollectionViewCell
         cell.movieImageView.image = UIImage(named: "miyoshi")
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor.whiteColor().CGColor
         return cell
     }
 }

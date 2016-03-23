@@ -22,6 +22,7 @@ class ChooseMovieViewController: UIViewController, UICollectionViewDelegate {
         let chooseMovieView = view as! ChooseMovieView
         chooseMovieView.movieCollectionView.delegate = self
         chooseMovieView.movieCollectionView.dataSource = movieManager
+        chooseMovieView.movieCollectionView.reloadData()
     }
     
     override func viewWillAppear(animated: Bool) {

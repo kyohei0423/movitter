@@ -71,7 +71,6 @@ class MovieViewController: UIViewController, AVCaptureFileOutputRecordingDelegat
     }
     
     func tapRecordButton() {
-        print("tap")
         let movieView = view as! MovieView
         if !isRecording {
             let path = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
