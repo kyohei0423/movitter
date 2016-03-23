@@ -33,7 +33,7 @@ class TimelineViewController: UIViewController {
     }
     
     func tapNewPostButton() {
-        performSegueWithIdentifier("ModalChoosePhotoViewController", sender: nil)
+        performSegueWithIdentifier("ModalChooseMovieViewController", sender: nil)
     }
     
 
